@@ -76,7 +76,7 @@ nav a:hover {
     animation: open 1s;
 }
 
-.textbox-2 {
+article {
     background-color: #1a1f1f;
     color: #fff;
     padding: 10px;
