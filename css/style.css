@@ -1,0 +1,110 @@
+:root {
+    --main-color: #0E8388;
+    --main-bg-color: #2C3333;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #1a1f1f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.center-items {
+    display: flex;
+
+    /* make a grid layout with 2 columns per row */
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.textbox {
+    background-color: #1a1f1f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-top: 10px;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+    /* play open animation */
+    animation: open 1s;
+}
+
+.textbox-2 {
+    background-color: #1a1f1f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+
+    width: fit-content;
+
+    border-radius: 30px;
+    border: 1px solid white;
+
+    width: 95%;
+
+    /* play open animation */
+    animation: open 1s;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
