@@ -1,41 +1,45 @@
 :root {
-    --main-color: #0E8388;
-    --main-bg-color: #2C3333;
+    --text-color: #fff;
+    --background-color: #25111c;
+    --primary-color: #ff32a6;
+    --secondary-color: #fdeeed;
+    --accent-color: #3ec2d4;
 }
 
 body {
-    background-color: var(--main-bg-color);
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-family: monospace;
 }
 
-nav {
-    background-color: #1a1f1f;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.blog-post {
+    min-width: 200px;
+    max-width: 700px;
+
+    min-height: 20px;
+    max-height: 500px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.full-width {
+    min-width: 100%;
 }
 
-nav a {
-    color: var(--main-color);
-    text-decoration: none;
+.container {
+    width:  fit-content;
+
+    transition: 0.2s;
+    background-color: rgba(255, 50, 166, 0.2);
+
+    border: 1px solid rgba(255, 50, 166, 0.4);
+    border-radius: 10px;
+
+    padding: 5px;
 }
 
-nav a:hover {
-    color: #fff;
+.container:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 50, 166, 0.4);
 }
 
 .center {
@@ -50,7 +54,7 @@ nav a:hover {
 
     /* make a grid layout with 2 columns per row */
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
 
@@ -58,7 +62,7 @@ nav a:hover {
 }
 
 .textbox {
-    background-color: #1a1f1f;
+    background-color: rgba(255, 50, 166, 0.6);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -76,35 +80,37 @@ nav a:hover {
     animation: open 1s;
 }
 
-article {
-    background-color: #1a1f1f;
-    color: #fff;
+a {
+    color: var(--accent-color);
+}
+
+nav {
     padding: 10px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.5em;
 
-    width: fit-content;
-
-    border-radius: 30px;
-    border: 1px solid white;
-
-    width: 95%;
-
-    /* play open animation */
-    animation: open 1s;
+    line-height: 40px;
 }
 
-a {
-    color: var(--main-color);
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    transition: 0.2s;
+    color: var(--text-color);
     text-decoration: none;
+    transform: scale(1);
+
+    padding: 5px;
+    border-radius: 10px;
 }
 
-@keyframes open {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+nav a:hover {
+    transition: 0.3s;
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
 }
