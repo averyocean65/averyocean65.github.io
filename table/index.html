@@ -9,20 +9,24 @@
     <title>Table Site</title>
 </head>
 <body>
-    <input type="text" id="id-input">
+    <input type="text" id="id-input"  onsubmit="submitId()">
     <button onclick="submitId()">Submit</button>
 
     <table id="sorting-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Count</th>
+                <th>Controls</th>
+            </tr>
+        </thead>
+        
         <tbody>
             <tr>
-                <td>Test</td>
-                <td>Test #2</td>
-            </tr>
-            <tr>
-                <td>Test #3</td>
-                <td>Test #4</td>
             </tr>
         </tbody>
     </table>
+
+    <button onclick="downloadTable()">Download Table HTML</button>
 </body>
 </html>
