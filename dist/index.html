@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>averyocean65</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script>
+        function toArtistPage() {
+            window.open("https://push.fm/fl/averyocean65", "_blank");
+        }
+
+        function toNewestRelease() {
+            window.open("https://push.fm/fl/totf", "_blank");
+        }
+
+        function toggleStreamingServices() {
+            const toToggle = document.getElementById("streaming-service-embeds");
+            const button = document.getElementById("show-streaming-embeds-btn");
+            
+            if(toToggle.style.display === "block") {
+                toToggle.style.display = "none";
+                button.innerText = "Show Embeds";
+            }
+            else {
+                toToggle.style.display = "block";
+                button.innerText = "Hide Embeds";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <header class="red pad-5px" style="margin: 0px 0px 0px 0px;">
+        <marquee class="glow" scrollamount="20">
+            <i onclick="toNewestRelease()" style="cursor: pointer;">Tales Of The Forgotten</i> out NOW!
+        </marquee>
+    </header>
+
+    <div class="centered">
+        <div style="width: 50%;">
+            <h1 class="shadow">averyocean65</h1>
+            <h2 class="shadow" style="margin-top: -20px;">Guitarist and Music Producer</h2>
+            <img class="glow" src="../assets/pfp.png" width="400px"/>
+            
+            <h2 id="whois">Who is averyocean65?</h2>
+            <p>Avery (aka Alisa) is a small independent producer from Germany with an ever-evolving style. Although her music is fully produced within the comfort of her bedroom, she still manages to amaze listeners with her upbeat, and simple yet stunning music.</p>
+
+            <h2>Where can I listen to her?</h2>
+            <button class="button-02" id="show-streaming-embeds-btn" onclick="toggleStreamingServices()">Show Embeds</button>
+            <div style="display: none" id="streaming-service-embeds">
+                <h3>Spotify</h3>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7zrRaxImDucwCQ2SY3U4gU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <h3>Apple Music</h3>
+                <iframe height="450" width="100%" title="Media player" src="https://embed.music.apple.com/us/artist/averyocean65/1689679269"></iframe>
+            </div>
+
+            <h3>General Link & Contact</h3>
+            <p>If you'd like to have a complete list of every official streaming platform with Alisa's catalog, or wish to contact her, click on the button below.</p>
+            <button onclick="toArtistPage()" class="button-01">Listen here!</button>
+        </div> 
+    </div>
+</body>
+<footer class="centered">
+    <p><b>(c) averyocean65, 2025</b></p>
+</footer>
+</html>

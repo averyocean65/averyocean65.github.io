@@ -1,0 +1,80 @@
+body {
+    background-image: url("../background-01.png");
+    image-rendering: pixelated;
+    
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    text-shadow: 0px 0px 10px rebeccapurple;
+
+    margin: 0px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.pad-5px {
+    padding: 5px;
+}
+
+.centered {
+    margin: 10px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    border: 0px 0px black;
+    border-radius: 100%;
+}
+
+.button-01 {
+    /* style="padding: 10px 20px 10px 20px; background-color: purple; color: white; border: none; box-shadow: 0px 0px 10px purple;" */
+    padding: 10px 20px 10px 20px;
+    border: none;
+
+    background-image: linear-gradient(#d218d2, #3b0b3b);
+    color: white;
+
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+
+    cursor: pointer;
+}
+
+.button-01:hover {
+    transition: 300ms ease-in-out;
+    transform: scale(1.1);
+    
+}
+
+.button-02 {
+    padding: 10px 20px 10px 20px;
+    border: none;
+
+    background-color: red;
+    color: white;
+
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button-02:hover {
+    animation: wobble 500ms infinite;
+}
+
+.grid-container {
+    display: inline-flexbox;
+}
+
+@keyframes wobble {
+    0% { rotate: 0deg; }
+    25% { rotate: 5deg; }
+    75% { rotate: -5deg;}
+    100% { rotate: 0deg; }
+}
