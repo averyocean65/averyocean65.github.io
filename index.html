@@ -12,10 +12,6 @@
             window.open("https://push.fm/fl/averyocean65", "_blank");
         }
 
-        function toNewestRelease() {
-            window.open("https://push.fm/fl/totf", "_blank");
-        }
-
         function toggleStreamingServices() {
             const toToggle = document.getElementById("streaming-service-embeds");
             const button = document.getElementById("show-streaming-embeds-btn");
@@ -30,25 +26,34 @@
             }
         }
     </script>
-
+    <script src="assets/js/element_spawner.js"></script>
 </head>
 <body>
-    <header class="red pad-5px" style="margin: 0px 0px 0px 0px;">
-        <marquee class="glow" scrollamount="20">
-            <i onclick="toNewestRelease()" style="cursor: pointer;">Tales Of The Forgotten</i> out NOW!
-        </marquee>
-    </header>
-
-    <div class="centered">
-        <div style="width: 50%;">
+    <div id="topbar-filler"></div>
+    <div id="ad-marquee-filler"></div>
+    <div class="centered main">
+        <div style="width: 50vw;">
             <h1 class="shadow">averyocean65</h1>
-            <h2 class="shadow" style="margin-top: -20px;">Guitarist and Music Producer</h2>
-            <img class="glow" src="../assets/pfp.png" width="400px"/>
+            <h2 class="shadow" style="margin-top: -20px;">Programmer, Guitarist and Music Producer</h2>
+            <!--<img class="glow" src="../assets/pfp.png" width="400px"/>-->
             
             <h2 id="whois">Who is averyocean65?</h2>
-            <p>Avery (aka Alisa) is a small independent producer from Germany with an ever-evolving style. Although her music is fully produced within the comfort of her bedroom, she still manages to amaze listeners with her upbeat, and simple yet stunning music.</p>
+            <details>
+                <summary>Music Biography</summary>
+                <u>Taken from Spotify</u>
+                <p>Avery (aka Alisa) is a small independent producer from Germany with an ever-evolving style. Although her music is fully produced within the comfort of her bedroom, she still manages to amaze listeners with her upbeat, and simple yet stunning music.</p>
+            </details>
 
-            <h2>Where can I listen to her?</h2>
+            <div class="spacer"></div>
+
+            <details>
+                <summary>Programming Biography</summary>
+                <p>I'm a programmer from Germany, mostly working with game engines such as <u>Unity, Unreal Engine, and Godot</u>. I also enjoy working on nieche projects like physics engines, small CPU emulators and miniature programming languages, though I rarely publish to public repositories.</p>
+            </details>
+
+            <hr>
+            <h1 id="music">Avery's Music</h1>
+            <h2>Where can I listen to her music?</h2>
             <button class="button-02" id="show-streaming-embeds-btn" onclick="toggleStreamingServices()">Show Embeds</button>
             <div style="display: none" id="streaming-service-embeds">
                 <h3>Spotify</h3>
@@ -58,13 +63,22 @@
                 <iframe height="450" width="100%" title="Media player" src="https://embed.music.apple.com/us/artist/averyocean65/1689679269"></iframe>
             </div>
 
-            <h3>General Link & Contact</h3>
-            <p>If you'd like to have a complete list of every official streaming platform with Alisa's catalog, or wish to contact her, click on the button below.</p>
+            <h3>Other Platforms & Contact</h3>
+            <p>If you'd like to have a complete list of every official streaming platform with my catalog, or wish to contact me, click on the button below to view my social media and email.</p>
             <button onclick="toArtistPage()" class="button-01">Listen here!</button>
+            
+            <hr>
+            <h1>Programming</h1>
+            <p></p>
+            <hr>
         </div> 
     </div>
 </body>
-<footer class="centered">
-    <p><b>(c) averyocean65, 2025</b></p>
+<footer class="centered" style="display: flex; flex-direction: column;">
+    <div style="width: 100%">
+        <img src="https://cyber.dabamos.de/88x31/cssdif.gif">
+        <img src="https://cyber.dabamos.de/88x31/color.gif">
+        <img src="https://cyber.dabamos.de/88x31/button25.gif">
+    </div>
 </footer>
 </html>

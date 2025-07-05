@@ -1,0 +1,22 @@
+.alert-marquee {
+    background-color: red;
+    color: white;
+
+    padding: 5px;
+
+    border-color: white;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.marquee-head {
+    overflow: hidden;
+    white-space: nowrap;
+    height: min-content;
+}
+
+.marquee-item {
+    min-width: 100%;
+    animation: marquee-movement 10s infinite linear;
+}
