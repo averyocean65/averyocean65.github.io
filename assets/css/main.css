@@ -1,5 +1,5 @@
 body {
-    background-image: url("../background-01.png");
+    background-image: url("/assets/img/background-01.png");
     background-color: #aaa;
     background-blend-mode: multiply;
     background-size: auto;
@@ -13,6 +13,15 @@ body {
     text-shadow: 0px 0px 10px purple;
 
     margin: 0px;
+}
+
+a {
+    text-decoration: underline;
+    color: #c4b4ff;
+}
+
+a:hover {
+    color: #dbd1ff;
 }
 
 hr {
