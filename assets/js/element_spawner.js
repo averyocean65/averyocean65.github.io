@@ -1,4 +1,4 @@
-fillers = [ "topbar", "ad-marquee" ]
+fillers = [ "topbar", "ad-marquee", "footer" ]
 
 window.onload = (event) => {
     for (let i = 0; i < fillers.length; i++) {
