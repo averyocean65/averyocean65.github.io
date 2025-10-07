@@ -15,9 +15,21 @@ body {
     margin: 0px;
 }
 
+.invalid {
+    color: #e04949;
+    text-shadow: none;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.invalid:hover {
+    color: #e04949;
+}
+
 a {
     text-decoration: underline;
     color: #c4b4ff;
+    cursor: pointer;
 }
 
 a:hover {
