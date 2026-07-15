@@ -7,7 +7,7 @@ function openLinkCautious(link) {
 }
 
 function toNewestRelease() {
-    toRelease("sleepy-star");
+    toRelease("istst");
 }
 
 function toRelease(name) {
