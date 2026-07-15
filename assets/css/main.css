@@ -1,14 +1,43 @@
 body {
-    background-image: url("../background-01.png");
+    background-image: url("/assets/img/background-01.png");
+    background-color: #aaa;
+    background-blend-mode: multiply;
+    background-size: auto;
+
     image-rendering: pixelated;
     
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     color: white;
 
-    text-shadow: 0px 0px 10px rebeccapurple;
+    text-shadow: 0px 0px 10px purple;
 
     margin: 0px;
+}
+
+.invalid {
+    color: #e04949;
+    text-shadow: none;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.invalid:hover {
+    color: #e04949;
+}
+
+a {
+    text-decoration: underline;
+    color: #c4b4ff;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #dbd1ff;
+}
+
+hr {
+    color: white;
 }
 
 .red {
@@ -28,11 +57,6 @@ body {
     justify-content: center;
 }
 
-.circle {
-    border: 0px 0px black;
-    border-radius: 100%;
-}
-
 .button-01 {
     /* style="padding: 10px 20px 10px 20px; background-color: purple; color: white; border: none; box-shadow: 0px 0px 10px purple;" */
     padding: 10px 20px 10px 20px;
@@ -50,7 +74,6 @@ body {
 .button-01:hover {
     transition: 300ms ease-in-out;
     transform: scale(1.1);
-    
 }
 
 .button-02 {
@@ -72,6 +95,15 @@ body {
     display: inline-flexbox;
 }
 
+.spacer {
+    min-height: 20px;
+    max-height: 20px;
+}
+
+@keyframes marquee-movement {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-50%); }
+}
 @keyframes wobble {
     0% { rotate: 0deg; }
     25% { rotate: 5deg; }
