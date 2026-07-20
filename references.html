@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>averyocean65</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script>
+        function toArtistPage() {
+            window.open("https://push.fm/fl/averyocean65", "_blank");
+        }
+
+        function toggleStreamingServices() {
+            const toToggle = document.getElementById("streaming-service-embeds");
+            const button = document.getElementById("show-streaming-embeds-btn");
+            
+            if(toToggle.style.display === "block") {
+                toToggle.style.display = "none";
+                button.innerText = "Show Embeds";
+            }
+            else {
+                toToggle.style.display = "block";
+                button.innerText = "Hide Embeds";
+            }
+        }
+    </script>
+    <script src="assets/js/element_spawner.js"></script>
+</head>
+<body>
+    <div id="topbar-filler"></div>
+    <div id="ad-marquee-filler"></div>
+    <div class="centered main">
+        <div style="width: 50vw;">
+            <h1>References</h1>
+            <p style="color:red">TODO</p>
+        </div>
+    </div>
+</body>
+<div id="footer-filler"></div>
+</html>
