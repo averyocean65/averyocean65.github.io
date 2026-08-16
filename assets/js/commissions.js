@@ -10,7 +10,9 @@ function getPricePerMinute() {
         case "electronic":
             return 50;
         case "video-game":
-            return 150;
+            return 200;
+        case "streaming":
+            return 120;
         case "mixing":
             return 45;
         default:
