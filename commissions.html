@@ -15,21 +15,27 @@
     <div id="ad-marquee-filler"></div>
     <div class="centered main">
         <div id="site-content" style="width: 50vw;">
-            <h1>Commission Information</h1>
+            <h1>Commissions</h1>
 
             <h2>Price Calculator</h2>
-            <label for="duration">Enter the duration of the song below.</label>
+            <label for="duration">Enter the duration of the song.</label>
             <input type="time" name="duration" id="duration">
-            <br>
-            <label for="genre">Enter the genre of the song below.</label>
+
+            <div class="spacer"></div>
+            
+            <label for="genre">Enter the type of commission.</label>
             <select name="genre" id="genre">
-                <option value="rock">Rock</option>
-                <option value="electronic">Electronic</option>
-                <option value="cinematic">Cinematic</option>
+                <option value="rock">Rock (Songwriting)</option>
+                <option value="electronic">Electronic (Songwriting)</option>
+                <option value="cinematic">Cinematic (Songwriting)</option>
+                <option value="mixing">Mixing and Mastering</option>
             </select>
 
             <p id="calculated-price">Press the button below to calculate the final commission price.</p>
             <button class="button-01" onclick="calculatePrice()">Calculate</button>
+            
+            <div class="spacer"></div>
+            <button class="button-02" id="purchase-button" onclick="payOnThomann()" hidden>Pay On Thomann</button>
         </div>
     </div>
 </body>
