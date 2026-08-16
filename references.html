@@ -7,36 +7,25 @@
 
     <link rel="stylesheet" href="../assets/css/main.css">
 
-    <script>
-        function toArtistPage() {
-            window.open("https://push.fm/fl/averyocean65", "_blank");
-        }
-
-        function toggleStreamingServices() {
-            const toToggle = document.getElementById("streaming-service-embeds");
-            const button = document.getElementById("show-streaming-embeds-btn");
-            
-            if(toToggle.style.display === "block") {
-                toToggle.style.display = "none";
-                button.innerText = "Show Embeds";
-            }
-            else {
-                toToggle.style.display = "block";
-                button.innerText = "Hide Embeds";
-            }
-        }
-    </script>
     <script src="assets/js/element_spawner.js"></script>
 </head>
 <body>
     <div id="topbar-filler"></div>
     <div id="ad-marquee-filler"></div>
     <div class="centered main">
-        <div style="width: 50vw;">
-            <h1>References</h1>
-            <p style="color:red">TODO</p>
+        <div id="site-content" style="width: 50vw;">
+            <h1>Testimonials</h1>
+            <div class="testimonial">
+                <p><i>"Avery is a long time friend and an exceptional musician, mixer, and programmer. She is versatile in every facet of her respective fields and can act reliably as a professional."</i></p>
+                <p>By: <a target="_blank" href="https://rldald989.github.io/Portfolio/">Featherless656</a> (20th of July, 2026)</p>
+            </div>
+            <hr>
+            <div class="testimonial">
+                <p><i>"Working with Avery is not just fun but efficient! She has good ideas and often knows how to work around challenges to create a good final product. I was always asked to give honest feedback which is so nice, she is hard working and takes initiatives to get things going or fix something for the best output possible. The final results are amazing!"</i></p>
+                <p>By: <a target="_blank" href="https://clovercamps.carrd.co/">CloverCamp</a>, director of <a href="music.html#identityleapsfilm">Identity Leaps</a> (23rd of July, 2026)</p>
+            </div>
         </div>
     </div>
 </body>
-<div id="footer-filler"></div>
+    <div id="footer-filler"></div>
 </html>

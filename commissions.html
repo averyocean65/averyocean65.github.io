@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>averyocean65</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="assets/js/element_spawner.js"></script>
+    <script src="assets/js/commissions.js"></script>
+</head>
+<body>
+    <div id="topbar-filler"></div>
+    <div id="ad-marquee-filler"></div>
+    <div class="centered main">
+        <div id="site-content" style="width: 50vw;">
+            <h1>Commission Information</h1>
+
+            <h2>Price Calculator</h2>
+            <label for="duration">Enter the duration of the song below.</label>
+            <input type="time" name="duration" id="duration">
+            <br>
+            <label for="genre">Enter the genre of the song below.</label>
+            <select name="genre" id="genre">
+                <option value="rock">Rock</option>
+                <option value="electronic">Electronic</option>
+                <option value="cinematic">Cinematic</option>
+            </select>
+
+            <p id="calculated-price">Press the button below to calculate the final commission price.</p>
+            <button class="button-01" onclick="calculatePrice()">Calculate</button>
+        </div>
+    </div>
+</body>
+    <div id="footer-filler"></div>
+</html>
