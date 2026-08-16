@@ -36,7 +36,7 @@ function calculatePrice() {
     const seconds = parseInt(duration.value.substring(3));
 
     const totalInMinutes = minutes + (seconds / 60);
-    latest_price = Math.round((totalInMinutes * price_unit) * 100) / 100;
+    latest_price = Math.round((totalInMinutes * price_unit));
 
     output.textContent = "Price: " + latest_price + "€ (" + price_unit + "€/min, " + duration.value + ")";
     purchase_button.hidden = false;
