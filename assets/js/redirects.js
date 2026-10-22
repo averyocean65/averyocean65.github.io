@@ -7,7 +7,7 @@ function openLinkCautious(link) {
 }
 
 function toNewestRelease() {
-    toRelease("istst");
+    toRelease("averyocean65");
 }
 
 function toRelease(name) {

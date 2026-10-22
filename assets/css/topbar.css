@@ -10,13 +10,17 @@
     background-image: radial-gradient(rgb(231, 138, 188), rgb(90, 45, 74));
 }
 
-.topbar a {
+.topbar a, p {
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 0px black;
 }
 
+.topbar p {
+    color: #d6d6d6 !important;
+}
+
 .topbar a:hover {
     transition: 300ms ease;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

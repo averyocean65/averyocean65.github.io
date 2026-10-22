@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>averyocean65 - Commissions</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="assets/js/element_spawner.js"></script>
+    <script src="assets/js/commissions.js"></script>
+</head>
+<body>
+    <div id="topbar-filler"></div>
+    <div id="ad-marquee-filler"></div>
+    <div class="centered main">
+        <div id="site-content" style="width: 50vw;">
+            <h1>Commissions</h1>
+
+            <h2>Services</h2>
+            <h3>Songwriting</h3>
+            <p>Songwriting is the complete package of services that I offer. Songwriting includes writing the composition for a song, and fully producing (recording, mixing, mastering) it with your supervision.</p>
+
+            <h3>Mixing & Mastering</h3>
+            <p>Mixing and Mastering is a smaller package, in which I will use the components of your project, and mix them together into a finalized song. I will also master a song that's already been mixed, though at the same rate at which I do both individual mixing and track mastering.</p>
+
+            <hr>
+
+            <h2>FAQ</h2>
+            <h3>Can you write lyrics and/or sing?</h3>
+            <p>Short answer: <u>no</u>.<br>I don't write lyrics of any sort, you will have to provide those yourself, as well as vocals, if you want vocals on a song we're producing.</p>
+
+            <h3>What is your process?</h3>
+            <p>When working with commissioners, I like to keep communication as transparent as possible. This means sending pictures of the project and gear I use for the song, so the client can be assured that everything is 100% genuinely human made. I also try my best to send demos of the song as soon as possible whenever the client requests them. Alongside all of this, if the client wants, I am available to voice call and stream during the recording, writing, and mixing/mastering processes, so the client can have full control over the music and deliver constant feedback.</p>
+
+            <h3>How do I pay you?</h3>
+            <p>I mainly accept payment via Thomann gift cards (yes, I know, it sounds scummy as hell). This is, because traditional payment methods are either not available to me, or I don't want to share legal information about myself through vendors like PayPal. I'm not aware of any other workarounds, sorry (honestly though, even if I did... the commission money would probably be spent on music equipment for me or my friends at some point).</p>
+
+            <h3>Do you use AI?</h3>
+            <p>No. More info on the topic can be found <a href="ai.html">here</a>.</p>
+
+            <hr>
+
+            <h2>Price Calculator</h2>
+            <label for="duration">Enter the duration of the song.</label>
+            <input type="time" name="duration" id="duration">
+
+            <div class="spacer"></div>
+            
+            <label for="genre">Enter the type of commission.</label>
+            <select name="genre" id="genre">
+                <option value="rock">Rock (Songwriting)</option>
+                <option value="electronic">Electronic (Songwriting)</option>
+                <option value="cinematic">Cinematic (Songwriting)</option>
+                <option value="video-game">OST (Songwriting)</option>
+                <option value="mixing">Mixing and Mastering</option>
+            </select>
+
+            <p id="calculated-price">Press the button below to calculate the final commission price.</p>
+            <button class="button-01" onclick="calculatePrice()">Calculate</button>
+
+            <p>In case of any questions, feel free to <a href="contact.html">reach out to me</a>.</p>
+        </div>
+    </div>
+</body>
+    <div id="footer-filler"></div>
+</html>
