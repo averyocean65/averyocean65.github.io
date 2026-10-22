@@ -24,6 +24,7 @@ function getPricePerMinute() {
 function calculatePrice() {
     const output = document.getElementById("calculated-price");
     const duration = document.getElementById("duration");
+    const selector = document.getElementById("genre");
 
     if(duration.value === "") {
         alert("Please input a valid duration!");
