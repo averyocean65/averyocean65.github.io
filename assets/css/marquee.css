@@ -14,9 +14,17 @@
     overflow: hidden;
     white-space: nowrap;
     height: min-content;
+
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
 }
 
 .marquee-item {
     min-width: 100%;
     animation: marquee-movement 10s infinite linear;
+}
+
+@keyframes marquee-movement {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-50%); }
 }

@@ -46,7 +46,7 @@ hr {
 }
 
 .pad-5px {
-    padding: 5px;
+    paddin§: 5px;
 }
 
 .centered {
@@ -100,10 +100,6 @@ hr {
     max-height: 20px;
 }
 
-@keyframes marquee-movement {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-50%); }
-}
 @keyframes wobble {
     0% { rotate: 0deg; }
     25% { rotate: 5deg; }
