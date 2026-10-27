@@ -37,7 +37,7 @@ function calculatePrice() {
     const seconds = parseInt(duration.value.substring(3));
 
     const totalInMinutes = minutes + (seconds / 60);
-    var price = Math.round((totalInMinutes * price_unit));
+    var price = Math.round(totalInMinutes * price_unit);
 
     output.textContent = "Price: " + price + "€ (" + price_unit + "€/min, " + duration.value + ")";
 }
