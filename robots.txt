@@ -1,3 +1,5 @@
+# File obtained from: https://github.com/ai-robots-txt/ai.robots.txt
+
 User-agent: AddSearchBot
 User-agent: AgentDataBot
 User-agent: AgentTimes
